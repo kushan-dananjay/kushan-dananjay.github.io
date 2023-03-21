@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+	<title>NCOE Final Mark Calc</title>
+    <style>
+    footer {
+     text-align: center;
+     padding: 97px;
+  
+    }
+    body { background-color: #17202A;
+    color: white;
+
+    </style>
+
+</head>
+<body >
+    
+	<div class="container">
+	<br><h3>Final Mark Calc</h3>
+	<form name="formcalc" class="form-group">
+        <br>
+		Internal Final Mark(AVG): <input type="number" id="txt1" class="form-control" style="font-size:16pt" onkeyup="sum();" autofocus>
+		<br>
+		Final Exam Mark: <input type="number" id="txt2" class="form-control" style="font-size:16pt" onkeyup="sum();">
+		
+		<br><br>
+		
+		<b>Final Mark: </b><input type="number" id="txttotal" class="form-control" style="font-size:16pt" onkeyup="sum();" readonly>
+		<br><br>
+        
+	</form>
+	</div>
+    <footer>
+        
+        
+        <h4>Final mark = 60% Cont.Ass + 40% final Exam</h4>
+    </footer>
+    
+	<script>
+
+		function sum() {
+            var txtnum1 = document.getElementById('txt1').value;
+            var txtnum2 = document.getElementById('txt2').value;
+            
+            var amnt = txtnum1 *60/100;
+            var amnt2 = txtnum2 *40/100;
+            var result = amnt+amnt2;
+
+            if (!isNaN(result)) {
+                document.getElementById('txttotal').value = result;
+            }
+        }
+
+		
+	</script>
+
+</body>
+</html>
