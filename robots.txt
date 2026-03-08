@@ -1,0 +1,5 @@
+robots.txt generated to kushanict.com
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: https://kushanict.com/sitemap.xml
