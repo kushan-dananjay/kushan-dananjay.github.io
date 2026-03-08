@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Sitemap: https://kushan-dananjay.github.io/sitemap.xml
